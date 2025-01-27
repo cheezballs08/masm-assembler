@@ -1,0 +1,27 @@
+# Code example that calculates fibonacci numbers
+
+# const MAX_DEPTH 0x10
+# const MAX_DEPTH 0b10000
+
+const MAX_DEPTH 16
+
+call main;
+call endloop;
+
+label main:
+  
+  # This could also be "mov.0b1" or "mov.0x1"
+  mov.1 -> r0;
+  mov.1 -> r1;
+
+  label fibloop:
+    add.r0.r1 -> r0;
+    
+    inc.r2 -> r2;
+    
+    jne.r2 MAX_DEPTH -> fibloop;
+  
+  ret;
+
+label end:
+j -> end;

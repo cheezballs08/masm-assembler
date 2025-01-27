@@ -1,0 +1,11 @@
+# Useful template for masm proramming.
+
+call main;
+call endloop;
+
+label main:
+
+  ret;
+
+label end:
+j -> end;

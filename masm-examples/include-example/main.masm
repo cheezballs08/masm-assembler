@@ -1,0 +1,16 @@
+# How including works
+
+@include "./increment.masm" 
+
+call main;
+call endloop;
+
+label main:
+
+  # Included from increment.masm file.
+  call inc_register_1;
+
+  ret;
+
+label end:
+j -> end;

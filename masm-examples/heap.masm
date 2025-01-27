@@ -1,0 +1,19 @@
+# Heap code example
+
+call main;
+call endloop;
+
+label main:
+  mov.r0 -> ram;
+
+  inc.ramptr -> ramptr;
+
+  inc.r0 -> r0;  
+
+  # loop infinitely
+  j -> main;
+
+  ret;
+
+label end:
+j -> end;

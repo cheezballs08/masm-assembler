@@ -1,4 +1,4 @@
-# Useful template for masm proramming.
+# Useful template for masm programming.
 
 call main;
 call endloop;
